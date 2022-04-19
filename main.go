@@ -56,8 +56,9 @@ func checkResi(done chan bool) {
 	c.Visit("http://localhost:9000/")
 	fmt.Println("count =", count)
 
-	if count > 6 {
+	if count > 7 {
 		playtone.Play()
+		log.Println("========== success =============")
 		done <- true
 	}
 }

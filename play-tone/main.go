@@ -11,7 +11,7 @@ import (
 )
 
 func Play() {
-	f, err := os.Open("./Lame_Drivers_-_01_-_Frozen_Egg.mp3")
+	f, err := os.Open("./play-tone/Lame_Drivers_-_01_-_Frozen_Egg.mp3")
 	if err != nil {
 		log.Fatal(err)
 	}
